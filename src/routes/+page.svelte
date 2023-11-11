@@ -1,2 +1,16 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  let todos = [
+    { name: 'todo1', id: 1 },
+    { name: 'todo2', id: 2 },
+    { name: 'todo3', id: 3 },
+  ]
+</script>
+
+<h1>TODOLIST</h1>
+<div>
+  {#each todos as todo}
+    <div>
+      <a href="todo/{todo.id}">{todo.name}</a>
+    </div>
+  {/each}
+</div>

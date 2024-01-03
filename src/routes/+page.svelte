@@ -6,7 +6,7 @@
   ]
 </script>
 
-<h1>TODOLIST</h1>
+<h1><a href="/">TODOLIST</a></h1>
 <div>
   {#each todos as todo}
     <div>
